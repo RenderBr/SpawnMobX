@@ -1,10 +1,10 @@
-# SpawnMobX [![GitHub Releases](https://img.shields.io/github/downloads/deadsurgeon42/SpawnMobX/total.svg)](https://github.com/deadsurgeon42/SpawnMobX/releases/latest/download/SpawnMobX.dll)
+# SpawnMobX [[GitHub Releases](https://github.com/KostyaJRZ/SpawnMobX/releases/download/1.0/SpawnMobX.dll)]
 🧟 *Spawn mobs with special properties!*
 
 Perfect for usage with [Command-Timelines](https://github.com/Enerdy/Command-Timelines).
 
 ## Installation
-Drop [the plugin](https://github.com/deadsurgeon42/SpawnMobX/releases) to your `ServerPlugins/` folder. That's all!
+Drop [the plugin](https://github.com/KostyaJRZ/SpawnMobX/releases) to your `ServerPlugins/` folder. That's all!
 
 Give the `spawnmobx.use` permission to the groups you wish to give access to the command.
 
