@@ -4,6 +4,7 @@ using System.Linq;
 using Terraria;
 using TerrariaApi.Server;
 using TShockAPI;
+using Terraria.DataStructures;
 
 namespace SpawnMobX
 {
@@ -134,7 +135,7 @@ namespace SpawnMobX
 
     private static void SpawnMob(int type, int x, int y)
     {
-      var npcIndex = NPC.NewNPC(x, y, type);
+      var npcIndex = NPC.NewNPC(new EntitySource_DebugCommand(), x, y, type);
       var npc = Main.npc[npcIndex];
       TSPlayer.All.SendData(PacketTypes.NpcUpdate, npc.FullName, npcIndex);
     }
@@ -204,7 +205,7 @@ namespace SpawnMobX
         }
       }
 
-      var npcIndex = NPC.NewNPC(x, y, type, 0, ai[0], ai[1], ai[2], ai[3], target);
+      var npcIndex = NPC.NewNPC(new EntitySource_DebugCommand(), x, y, type, 0, ai[0], ai[1], ai[2], ai[3], target);
       var npc = Main.npc[npcIndex];
 
       if (givenName != null)
